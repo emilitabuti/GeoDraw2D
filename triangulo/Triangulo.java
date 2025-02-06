@@ -1,7 +1,7 @@
 package triangulo;
 import ponto.Ponto;
 /**
- * Representação de um triangulo matematico
+ * Representacao de um triangulo matematico
  *
  * @author Caroline, Emili, Gustavo Macedo, Isabela
  * @version 12/08/2020
@@ -45,9 +45,9 @@ public class Triangulo {
     /**
      * Controi um triangulo com valores de p1, p2, p3 (externos)
      *
-     * @param p1 Um parâmetro
-     * @param p2 Um parâmetro
-     * @param p3 Um parâmetro
+     * @param p1 Um parametro
+     * @param p2 Um parametro
+     * @param p3 Um parametro
      */
     public Triangulo(Ponto p1, Ponto p2, Ponto p3) {
         setP1(p1);
