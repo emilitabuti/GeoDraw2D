@@ -218,9 +218,9 @@ public class RetaGr extends Reta{
                 pFim = p1.getY();            
             }
             // percorre de y1 ate y2. 
-            // x e´ calculado pela equacao: x = (y - b) / m
+            // x e calculado pela equacao: x = (y - b) / m
             for(y = pIni; y <= pFim; ++y){ // percorre de y1 ate y2
-                // x1 e x2 são iguais
+                // x1 e x2 sao iguais
                 x = p1.getX(); // ou x = p2.getX()
 
                 // Define ponto grafico
@@ -242,7 +242,7 @@ public class RetaGr extends Reta{
                     pFim = p1.getX();            
                 }
                 // percorre de x1 ate x2. 
-                // y e´ calculado pela equacao: y = mx + b
+                // y e calculado pela equacao: y = mx + b
                 for(x = pIni; x <= pFim; ++x){ 
                     // Calculo de y pela equacao da reta
                     y = (m*x + b);
@@ -262,7 +262,7 @@ public class RetaGr extends Reta{
                     pFim = p1.getY();            
                 }
                 // percorre de y1 ate y2. 
-                // x e´ calculado pela equacao: x = (y - b) / m
+                // x e calculado pela equacao: x = (y - b) / m
                 for(y = pIni; y <= pFim; ++y){ // percorre de y1 ate y2
                     // Calculo de x pela equacao da reta
                     x = ((y - b)/m);
