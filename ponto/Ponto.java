@@ -84,7 +84,7 @@ public class Ponto {
     }
 
     /**
-     * Método sobrecarregado que imprime um ponto no formato [x, y]
+     * Metodo sobrecarregado que imprime um ponto no formato [x, y]
      *
      * @return string representando o ponto
      */
