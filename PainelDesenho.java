@@ -218,9 +218,9 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
     }
 
     /**
-     * Método mouseReleased
+     * MÃ©todo mouseReleased
      *
-     * @param e Um parâmetro
+     * @param e Um parametro
      */
     public void mouseReleased(MouseEvent e) { 
         if (tipo != TipoPrimitivo.TRIANGULO && tipo != TipoPrimitivo.TRANSLACAO){
@@ -245,9 +245,9 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
     }
 
     /**
-     * Método mouseDragged
+     * MÃ©todo mouseDragged
      *
-     * @param e Um parâmetro
+     * @param e Um parametro
      */
     public void mouseDragged(MouseEvent e) {
         if (tipo != TipoPrimitivo.TRIANGULO && tipo != TipoPrimitivo.PONTO){
@@ -279,8 +279,8 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
      * Redesenha todas as figuras que estao armazenadas na ED
      */
     public void redesenhar(Graphics g) {
-        // Limpa a área onde os desenhos serão feitos
-        g.clearRect(0, 0, getWidth(), getHeight()); // Limpa a área do painel
+        // Limpa a area onde os desenhos serao feitos
+        g.clearRect(0, 0, getWidth(), getHeight()); // Limpa a area do painel
         
         //Para pontos
         int ax1, ay1, ax2, ay2, ax3, ay3;
@@ -324,7 +324,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                             }
                         }
                     }
-                    // Se for TRIÂNGULO
+                    // Se for TRIANGULO
                     else if (i == 4) {
                         if (temp != null) {
                             temp = temp.getProximo();
@@ -349,7 +349,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                     }
 
                     contador++;
-                    temp = temp.getProximo(); // Ir para o próximo nó
+                    temp = temp.getProximo(); // Ir para o proximo no
                 }
             }
         }
@@ -445,7 +445,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
      */
     public void deletarFigura(Graphics g){
         int ax1, ay1;
-        //Ponto da ED que é o mais proximo de onde o usuario clicou
+        //Ponto da ED que e o mais proximo de onde o usuario clicou
         double deletar[] = selecionarPontoProximo(g);
 
         if(deletar[0] != -1){ //se achou um ponto da ED
@@ -512,7 +512,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                 contador++;
                 antAnt = ant;
                 ant = temp;
-                temp = temp.getProximo(); // Ir para o próximo nó
+                temp = temp.getProximo(); // Ir para o proximo no
             }
         }
         setTipo(TipoPrimitivo.NENHUM);
@@ -529,7 +529,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
         double d; //para distancia de um ponto a outro
         double ponto[] = new double[4];
         ponto[0] = -1;
-        ponto[3] = 20;//maxima distancia é 20
+        ponto[3] = 20;//maxima distancia e 20
 
         //percorre toda a ED
         for (int i = 0; i < armazenador.length; i++) {
@@ -566,7 +566,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                             }
                         }
                     }
-                    // Se for TRIÂNGULO
+                    // Se for TRIANGULO
                     else if (i == 4) {
                         if (temp != null) {
                             temp = temp.getProximo();
@@ -595,7 +595,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                     }
 
                     contador++;
-                    temp = temp.getProximo(); // Ir para o próximo nó
+                    temp = temp.getProximo(); // Ir para o proximo no
                 }
             }
         }
@@ -609,7 +609,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
      */
     public void translacaoPrimitivos(Graphics g){
         int ax1, ay1, ax2, ay2;
-        //Ponto da ED que é o mais proximo de onde o usuario clicou
+        //Ponto da ED que e o mais proximo de onde o usuario clicou
         double novoPonto[] = selecionarPontoProximo(g);
         
         if(novoPonto[0] != -1){
@@ -676,7 +676,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                 contador++;
                 antAnt = ant;
                 ant = temp;
-                temp = temp.getProximo(); // Ir para o próximo nó
+                temp = temp.getProximo(); // Ir para o proximo no
             }
         }
         setTipo(TipoPrimitivo.NENHUM);
@@ -693,7 +693,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
         float angulo = Float.parseFloat(JOptionPane.showInputDialog("Angulo: "));
         double anguloRadianos = Math.toRadians(angulo); // Converter de graus para r
         
-        //Ponto da ED que é o mais proximo de onde o usuario clicou
+        //Ponto da ED que e o mais proximo de onde o usuario clicou
         double novoPonto[] = selecionarPontoProximo(g);
         
         if(novoPonto[0] != -1){
@@ -719,7 +719,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                             //coordenadas do centro da figura
                             xc = (ax1 + ax2) / 2;
                             yc = (ay1 + ay2) / 2;
-                            if(novoPonto[0] == 2){//o centro do circulo é o ponto do centro
+                            if(novoPonto[0] == 2){//o centro do circulo e o ponto do centro
                                 xc = ax1;
                                 yc = ay1;
                             }
@@ -835,7 +835,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                 contador++;
                 antAnt = ant;
                 ant = temp;
-                temp = temp.getProximo(); // Ir para o próximo nó
+                temp = temp.getProximo(); // Ir para o proximo no
             }
         }
         setTipo(TipoPrimitivo.NENHUM);
@@ -849,10 +849,10 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
      */
     public void escalaPrimitivos(Graphics g){
         int ax1, ay1, ax2, ay2, ax3, ay3, xr, yr, xc, yc;
-        int Sx = Integer.parseInt(JOptionPane.showInputDialog("Forneça o fator de escala Sx: "));
-        int Sy = Integer.parseInt(JOptionPane.showInputDialog("Forneça o fator de escala Sy: "));
+        int Sx = Integer.parseInt(JOptionPane.showInputDialog("ForneÃ§a o fator de escala Sx: "));
+        int Sy = Integer.parseInt(JOptionPane.showInputDialog("ForneÃ§a o fator de escala Sy: "));
         
-        //Ponto da ED que é o mais proximo de onde o usuario clicou
+        //Ponto da ED que e o mais proximo de onde o usuario clicou
         double novoPonto[] = selecionarPontoProximo(g);
         
         if(novoPonto[0] != -1){
@@ -990,7 +990,7 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
                 contador++;
                 antAnt = ant;
                 ant = temp;
-                temp = temp.getProximo(); // Ir para o próximo nó
+                temp = temp.getProximo(); // Ir para o proximo no
             }
         }
         setTipo(TipoPrimitivo.NENHUM);
