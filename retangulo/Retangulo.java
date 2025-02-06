@@ -1,7 +1,7 @@
 package retangulo;
 import ponto.Ponto;
 /**
- * Representação de um retangulo matematico
+ * Representacao de um retangulo matematico
  *
  * @author Caroline, Emili, Gustavo Macedo, Isabela
  * @version 12/08/2020
@@ -39,8 +39,8 @@ public class Retangulo {
     /**
      * Controi um retangulo com valores de p1 e p2 (externos)
      *
-     * @param p1 Um parâmetro
-     * @param p2 Um parâmetro
+     * @param p1 Um parametro
+     * @param p2 Um parametro
      */
     public Retangulo(Ponto p1, Ponto p2) {
         setP1(p1);
