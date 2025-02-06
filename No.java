@@ -36,16 +36,16 @@ public class No{
     }
     
     /**
-     * Método setProximo
+     * MÃ©todo setProximo
      *
-     * @param proximo Um parâmetro
+     * @param proximo Um parametro
      */
     public void setProximo(No proximo){
         this.proximo = proximo;
     }
     
     /**
-     * Método getConteudox
+     * MÃ©todo getConteudox
      *
      * @return O valor de retorno
      */
@@ -54,7 +54,7 @@ public class No{
     }
     
     /**
-     * Método getConteudoy
+     * MÃ©todo getConteudoy
      *
      * @return O valor de retorno
      */
@@ -63,7 +63,7 @@ public class No{
     }
     
     /**
-     * Método getConteudoEsp
+     * MÃ©todo getConteudoEsp
      *
      * @return O valor de retorno
      */
@@ -72,7 +72,7 @@ public class No{
     }
     
     /**
-     * Método getConteudoCor
+     * MÃ©todo getConteudoCor
      *
      * @return O valor de retorno
      */
@@ -81,7 +81,7 @@ public class No{
     }
     
     /**
-     * Método getProximo
+     * MÃ©todo getProximo
      *
      * @return O valor de retorno
      */
@@ -90,7 +90,7 @@ public class No{
     }
     
     /**
-     * Método toStringx
+     * MÃ©todo toStringx
      *
      * @return O valor de retorno
      */
@@ -99,7 +99,7 @@ public class No{
     }
     
     /**
-     * Método toStringy
+     * MÃ©todo toStringy
      *
      * @return O valor de retorno
      */
