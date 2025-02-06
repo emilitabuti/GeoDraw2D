@@ -47,7 +47,7 @@ class Gui extends JFrame {
     private JButton jbCirculo = new JButton("Circulo");
     private JButton jbRetangulo = new JButton("Retangulo");
     private JButton jbTriangulo = new JButton("Triangulo");
-    private JButton jbTransformacoes = new JButton("Transformações");
+    private JButton jbTransformacoes = new JButton("Transformacoes");
     private JButton jbLimpar = new JButton("Limpar");
     private JButton jbRedesenhar = new JButton("Redesenhar");
     private JButton jbDeletar = new JButton("Deletar figura");
