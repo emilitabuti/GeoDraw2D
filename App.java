@@ -2,7 +2,7 @@
 /**
  * Aplicacao para testar primitivos graficos.
  * 
- * @author Julio Arakaki 
+ * @author Emili Tabuti, Isabela Groke 
  * @version 20220815
  */
 public class App {
