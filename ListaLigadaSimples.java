@@ -66,7 +66,7 @@ public class ListaLigadaSimples {
     /**
      * setQtdNos
      *
-     * @param qtdNos Um parâmetro
+     * @param qtdNos Um parametro
      */
     private void setQtdNos(int qtdNos){
         this.qtdNos = qtdNos;
@@ -156,7 +156,7 @@ public class ListaLigadaSimples {
     /**
      * remover
      *
-     * Remove o nó dado como parâmetro
+     * Remove o no dado como parametro
      */
     public void remover(No noARemover) {
         No cabeca = getInicio();
@@ -164,7 +164,7 @@ public class ListaLigadaSimples {
             return;
         }
 
-        // Se o nó a ser removido for o primeiro (cabeça)
+        // Se o no a ser removido for o primeiro (cabeca)
         if (cabeca.getConteudox() == noARemover.getConteudox() && cabeca.getConteudoy() == noARemover.getConteudoy()) {
             setInicio(cabeca.getProximo());
             setQtdNos(getQtdNos() - 1);
@@ -174,7 +174,7 @@ public class ListaLigadaSimples {
             return;
         }
 
-        // Se o nó a ser removido estiver no meio ou no final
+        // Se o no a ser removido estiver no meio ou no final
         No atual = cabeca.getProximo();
         No anterior = cabeca;
 
@@ -198,18 +198,18 @@ public class ListaLigadaSimples {
      * Apresentar os objetos da lista ligada
      */
     public void printLista() {
-        No atual = getInicio();  // Pega o início da lista (cabeça)
+        No atual = getInicio();  // Pega o inicio da lista (cabeca)
     
-        // Verifica se a lista está vazia
+        // Verifica se a lista esta vazia
         if (atual == null) {
-            System.out.println("A lista está vazia.");
+            System.out.println("A lista estÃ¡ vazia.");
             return;
         }
     
         // Percorre a lista e imprime os elementos
         while (atual != null) {
             System.out.println("ConteudoX: " + atual.getConteudox() + ", ConteudoY: " + atual.getConteudoy());
-            atual = atual.getProximo();  // Move para o próximo nó
+            atual = atual.getProximo();  // Move para o prÃ³ximo no
         }
     }
 }
