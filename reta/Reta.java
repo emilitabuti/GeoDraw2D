@@ -1,7 +1,7 @@
 package reta;
 import ponto.Ponto;
 /**
- * Representação de uma reta matematica.
+ * Representacao de uma reta matematica.
  *
  * @author Caroline, Emili, Gustavo Macedo, Isabela
  * @version 12/08/2020
@@ -39,8 +39,8 @@ public class Reta {
     /**
      * Controi uma reta com valores de p1 e p2 (externos)
      *
-     * @param p1 Um parâmetro
-     * @param p2 Um parâmetro
+     * @param p1 Um parametro
+     * @param p2 Um parametro
      */
     public Reta(Ponto p1, Ponto p2) {
         setP1(p1);
