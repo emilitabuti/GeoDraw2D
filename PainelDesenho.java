@@ -389,32 +389,32 @@ public class PainelDesenho extends JPanel implements MouseListener, MouseMotionL
      */
     public void armazenarPrimitivos() {
         if (tipo == TipoPrimitivo.PONTO){
-            lP.inserirFim(new No(new Integer(x1), new Integer(y1), getEsp(), getCorAtual()));
+            lP.inserirFim(new No(Integer.valueOf(x1), Integer.valueOf(y1), getEsp(), getCorAtual()));
             armazenador[0] = lP;
         }
 
         if (tipo == TipoPrimitivo.RETA){
-            lReta.inserirFim(new No(new Integer(x1), new Integer(y1),getEsp(), getCorAtual()));
-            lReta.inserirFim(new No(new Integer(x2), new Integer(y2),getEsp(), getCorAtual()));
+            lReta.inserirFim(new No(Integer.valueOf(x1), Integer.valueOf(y1),getEsp(), getCorAtual()));
+            lReta.inserirFim(new No(Integer.valueOf(x2), Integer.valueOf(y2),getEsp(), getCorAtual()));
             armazenador[1] = lReta;
         }
 
         if (tipo==TipoPrimitivo.CIRCULO){
-            lC.inserirFim(new No(new Integer(x1), new Integer(y1),getEsp(), getCorAtual()));
-            lC.inserirFim(new No(new Integer(x2), new Integer(y2),getEsp(), getCorAtual()));
+            lC.inserirFim(new No(Integer.valueOf(x1), Integer.valueOf(y1),getEsp(), getCorAtual()));
+            lC.inserirFim(new No(Integer.valueOf(x2), Integer.valueOf(y2),getEsp(), getCorAtual()));
             armazenador[2] = lC;
         }
 
         if (tipo == TipoPrimitivo.RETANGULO){
-            lRetangulo.inserirFim(new No(new Integer(x1), new Integer(y1),getEsp(), getCorAtual()));
-            lRetangulo.inserirFim(new No(new Integer(x2), new Integer(y2),getEsp(), getCorAtual()));
+            lRetangulo.inserirFim(new No(Integer.valueOf(x1), Integer.valueOf(y1),getEsp(), getCorAtual()));
+            lRetangulo.inserirFim(new No(Integer.valueOf(x2), Integer.valueOf(y2),getEsp(), getCorAtual()));
             armazenador[3] = lRetangulo;
         }
 
         if (tipo == TipoPrimitivo.TRIANGULO){
-            lT.inserirFim(new No(new Integer(x1), new Integer(y1),getEsp(), getCorAtual()));
-            lT.inserirFim(new No(new Integer(x2), new Integer(y2),getEsp(), getCorAtual()));
-            lT.inserirFim(new No(new Integer(x3), new Integer(y3),getEsp(), getCorAtual()));
+            lT.inserirFim(new No(Integer.valueOf(x1), Integer.valueOf(y1),getEsp(), getCorAtual()));
+            lT.inserirFim(new No(Integer.valueOf(x2), Integer.valueOf(y2),getEsp(), getCorAtual()));
+            lT.inserirFim(new No(Integer.valueOf(x3), Integer.valueOf(y3),getEsp(), getCorAtual()));
             armazenador[4] = lT;
         }
     }
