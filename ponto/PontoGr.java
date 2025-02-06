@@ -3,7 +3,7 @@ package ponto;
 import java.awt.Color;
 import java.awt.Graphics;
 /**
- * Implementação da classe ponto gráfico
+ * Implementacao da classe ponto grafico
  * @author Caroline, Emili, Gustavo Macedo, Isabela
  * @version 20220815
  */
