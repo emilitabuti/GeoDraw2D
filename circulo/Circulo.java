@@ -1,7 +1,7 @@
 package circulo; 
 import ponto.Ponto;
 /**
- * Representação de um circulo matematico
+ * Representacao de um circulo matematico
  *
  * @author Caroline, Emili, Gustavo Macedo, Isabela
  * @version 12/08/2020
@@ -40,8 +40,8 @@ public class Circulo {
     /**
      * Controi um Circulo com valores de p1 e p2 (externos)
      *
-     * @param p1 Um parâmetro
-     * @param p2 Um parâmetro
+     * @param p1 Um parametro
+     * @param p2 Um parametro
      */
     public Circulo(Ponto pc, Ponto p) {
         setPc(pc);
